@@ -31,41 +31,51 @@
             <h1>Agenda tu Clase</h1>
             <p>Completa el formulario y nos pondremos en contacto contigo para confirmar tu cita. Los campos con * son obligatorios.</p>
             <form action="#" method="post">
-                <label for="nombre">Nombre completo *</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Martínez" required>
-
-                <label for="correo">Correo electrónico *</label>
-                <input type="email" id="correo" name="correo" placeholder="Ej: laura09@gmail.com" required>
-
-                <label for="telefono">Teléfono *</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3123123123" pattern="[0-9]{10}" title="Escribe 10 números, sin espacios" required>
-
-                <label for="tipo">Tipo de curso *</label>
-                <select id="tipo" name="tipo" required>
-                    <option value="">Selecciona un curso</option>
-                    <option value="basico-auto">Básico Auto</option>
-                    <option value="completo-auto">Completo Auto</option>
-                    <option value="moto-esencial">Moto Esencial</option>
-                    <option value="perfeccionamiento">Perfeccionamiento</option>
-                </select>
-
-                <label for="fecha">Fecha preferida *</label>
-                <input type="date" id="fecha" name="fecha" required>
-
-                <label for="horario">Horario *</label>
-                <select id="horario" name="horario" required>
-                    <option value="">Selecciona un horario</option>
-                    <option value="manana">Mañana</option>
-                    <option value="tarde">Tarde</option>
-                </select>
-
-                <label for="mensaje">Mensaje (opcional)</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si tienes alguna duda o preferencia"></textarea>
-                
-                <input type="checkbox" id="acepta" name="acepta" required>
-                <label for="acepta">Acepto el tratamiento de mis datos personales *</label>
-
-                <a class="btn" href="contacto.html">Solicitar cita</a>
+                <div class="campo">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Martínez" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ej: laura09@gmail.com" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3123123123" pattern="[0-9]{10}" title="Escribe 10 números, sin espacios" required>
+                </div>
+                <div class="campo">
+                    <label for="tipo">Tipo de curso *</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="basico-auto">Básico Auto</option>
+                        <option value="completo-auto">Completo Auto</option>
+                        <option value="moto-esencial">Moto Esencial</option>
+                        <option value="perfeccionamiento">Perfeccionamiento</option>
+                    </select>
+                </div>
+                <div class="campo">
+                        <label for="fecha">Fecha preferida *</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="campo">
+                    <label for="horario">Horario *</label>
+                    <select id="horario" name="horario" required>
+                        <option value="">Selecciona un horario</option>
+                        <option value="manana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select>
+                </div>
+                <div class="campo campo-completo">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si tienes alguna duda o preferencia"></textarea>
+                </div>
+                <div class="campo campo-completo campo-check">
+                    <input type="checkbox" id="acepta" name="acepta" required>
+                    <label for="acepta">Acepto el tratamiento de mis datos personales *</label>
+                </div>
+                <div class="campo-completo">
+                    <a class="btn" href="contacto.html">Solicitar cita</a>
+                </div>
             </form>
         </section>
     </main>
