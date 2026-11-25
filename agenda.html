@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda | Zafira Academia de Manejo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Zafira.Drive</span>
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="instructores.html">Instructores</a></li>
+                <li><a href="vehiculos.html">Vehículos</a></li>
+                <li><a href="cursos.html" aria-current="page">Cursos</a></li>
+                <li><a href="agenda.html" aria-current="page">Agenda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="agenda">
+            <h1>Agenda tu Clase</h1>
+            <p>Completa el formulario y nos pondremos en contacto contigo para confirmar tu cita. Los campos con * son obligatorios.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Martínez" required>
+
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="Ej: laura09@gmail.com" required>
+
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3123123123" pattern="[0-9]{10}" title="Escribe 10 números, sin espacios" required>
+
+                <label for="tipo">Tipo de curso *</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="">Selecciona un curso</option>
+                    <option value="basico-auto">Básico Auto</option>
+                    <option value="completo-auto">Completo Auto</option>
+                    <option value="moto-esencial">Moto Esencial</option>
+                    <option value="perfeccionamiento">Perfeccionamiento</option>
+                </select>
+
+                <label for="fecha">Fecha preferida *</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="horario">Horario *</label>
+                <select id="horario" name="horario" required>
+                    <option value="">Selecciona un horario</option>
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                </select>
+
+                <label for="mensaje">Mensaje (opcional)</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si tienes alguna duda o preferencia"></textarea>
+                
+                <input type="checkbox" id="acepta" name="acepta" required>
+                <label for="acepta">Acepto el tratamiento de mis datos personales *</label>
+
+                <a class="btn" href="contacto.html">Solicitar cita</a>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Zafira Academia de Manejo: tu licencia, tu libertad</p>
+        <p>Instagram | Facebook | WhatsApp | TikTok</p>
+        <p>Cra 11 # 67-27, Bucaramanga · Tel: 33333333 · info@zafira.com</p>
+        <p>© 2026 Zafira Academia de Manejo. Todos los derechos reservados.</p>   
+    </footer>
+</body>
+</html>

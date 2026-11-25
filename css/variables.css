@@ -1,0 +1,14 @@
+:root{
+    --primary: #0d47a1; /*marca*/
+    --secondary: #ffb703; /*botones y detalles*/
+    --accent: #06d6a0; /*acentos*/
+    --text: #1f2937; /*texto*/
+    --bg: #fafafa; /*fondo*/
+    --white: #ffffff;
+    
+    --space: 16px; /*espacio base*/
+    --radius: 10px; /*esquinas redondas*/
+    --shadow: 0 4px 12px rgba(0,0,0,0.1); /*sombrea suave*/
+
+    --font: 'Poppins', sans-serif;
+}
