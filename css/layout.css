@@ -73,8 +73,8 @@ footer{
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.3s, transform 0.3s;
 }
-.redes img{
-    filter: invert(1);
+.redes img {
+    filter: brightness(0) invert(1);
 }
 .redes a:hover,
 .redes a:focus-visible{
@@ -82,6 +82,14 @@ footer{
     transform: translateY(-3px);
 }
 .redes a:hover img,
-.redes a:focus-visible img{
-    filter: none;
+.redes a:focus-visible img {
+    filter: brightness(0);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
 }
