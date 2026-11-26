@@ -59,3 +59,29 @@ footer{
     text-align: center;
     font-size: 0.9rem;
 }
+.redes{
+    display: flex;
+    gap: var(--space);
+}
+.redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.redes img{
+    filter: invert(1);
+}
+.redes a:hover,
+.redes a:focus-visible{
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+.redes a:hover img,
+.redes a:focus-visible img{
+    filter: none;
+}
